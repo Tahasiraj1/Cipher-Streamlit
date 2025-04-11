@@ -111,7 +111,7 @@ if st.experimental_user.is_logged_in:
     with tab2:
         st.subheader("📂 Store Data Securely")
         text = st.text_area("Enter Data:")
-        passkey = st.text_input("Enter Passkey1:", type="password")
+        passkey = st.text_input("Enter Passkey:", type="password")
 
         if st.button("Encrypt & Save", use_container_width=True):
             if text and passkey:
